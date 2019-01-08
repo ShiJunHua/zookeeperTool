@@ -1,9 +1,9 @@
 package com.percent;
 
-import com.percent.zookeeper.ZooKeeperBase;
-
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
 import java.awt.*;
+import java.util.Enumeration;
 
 /**
  * @Description:
@@ -12,11 +12,11 @@ import java.awt.*;
  */
 public class Main{
    public Main(){
-       String inputValue = JOptionPane.showInputDialog("请输入zookeeper的IP地址");
-       ZooKeeperBase.setHost(inputValue);
-//       ZooKeeperBase.setHost("172.20.54.121");
+       Dimension screeSize = Toolkit.getDefaultToolkit().getScreenSize();
+       int screenWidth = screeSize.width;
+       int screenHeight = screeSize.height;
        //加载图片
-       ImageIcon icon=new ImageIcon(getClass().getResource("/bg2.jpg"));
+       ImageIcon icon=new ImageIcon(getClass().getResource("/images/bg2.jpg"));
        //Image im=new Image(icon);
        //将图片放入label中
        JLabel label=new JLabel(icon);
@@ -30,23 +30,41 @@ public class Main{
        j.setOpaque(false);
 
        HeaderPanel headerPanel = new HeaderPanel();
-       JSplitPane jSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
        BodyLeftPanel bodyLeftPanel = new BodyLeftPanel();
        BodyRightPanel bodyRightPanel = new BodyRightPanel();
        bodyLeftPanel.setTextPane(bodyRightPanel.getTextArea());
+       headerPanel.setTree(bodyLeftPanel.getTree());
+       headerPanel.setTextPane(bodyRightPanel.getTextArea());
+       headerPanel.setBodyLeftPanel(bodyLeftPanel);
+       JSplitPane jSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
        jSplitPane.setLeftComponent(bodyLeftPanel);
        jSplitPane.setRightComponent(bodyRightPanel);
        jSplitPane.setOpaque(false);
        jSplitPane.setDividerSize(2);
+       jSplitPane.setDividerLocation(Double.valueOf(screenWidth*0.8*0.3).intValue());
+
        frame.add(headerPanel,BorderLayout.NORTH);
        frame.add(jSplitPane,BorderLayout.CENTER);
-       frame.setSize(900,700);
+       frame.setSize(Double.valueOf(screenWidth*0.8).intValue(),Double.valueOf(screenHeight*0.7).intValue());
        frame.setLocationRelativeTo(null);
        frame.setVisible(true);
        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-       frame.setIconImage(new ImageIcon(getClass().getResource("/zookeeper.png")).getImage());
+       frame.setIconImage(new ImageIcon(getClass().getResource("/images/zookeeper.png")).getImage());
    }
     public static void main(String[] args) {
+        InitGlobalFont(GlobalFont.getFont());
         new Main();
+    }
+
+    private static void InitGlobalFont(Font font) {
+        FontUIResource fontRes = new FontUIResource(font);
+        for (Enumeration<Object> keys = UIManager.getDefaults().keys();
+             keys.hasMoreElements(); ) {
+            Object key = keys.nextElement();
+            Object value = UIManager.get(key);
+            if (value instanceof FontUIResource) {
+                UIManager.put(key, fontRes);
+            }
+        }
     }
 }

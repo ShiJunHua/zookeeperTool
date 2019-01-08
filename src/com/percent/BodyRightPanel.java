@@ -14,7 +14,6 @@ public class BodyRightPanel extends JPanel {
         this.setOpaque(false);
         this.setLayout(new BorderLayout());
         textPane = new JTextPane();
-        textPane.setSize(500,600);
         textPane.setOpaque(false);
         textPane.setForeground(Color.WHITE);
         int v = ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;

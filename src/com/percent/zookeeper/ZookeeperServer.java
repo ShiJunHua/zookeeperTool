@@ -98,4 +98,23 @@ public class ZookeeperServer{
         }
         return false;
     }
+
+    /**
+     * 删除节点
+     * @param path
+     * @return
+     * @throws Exception
+     */
+    public void delAllNode(String path){
+        ZooKeeperBase zooKeeperBase = ZooKeeperBase.getInstance();
+        try{
+            zooKeeperBase.connect();
+            zooKeeperBase.delAllNode(path);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            zooKeeperBase.close();
+        }
+    }
+
 }
