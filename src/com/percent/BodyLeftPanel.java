@@ -32,6 +32,7 @@ public class BodyLeftPanel extends JPanel {
     private TreePath curSlectTreePath;
     private DefaultTreeModel dtm;
     private JTree tree;
+
     public BodyLeftPanel(){
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
@@ -97,6 +98,8 @@ public class BodyLeftPanel extends JPanel {
                         if(selectNode.getChildCount()>0){
                             reloadTree();
                         }
+                    }else{
+                        setContent(selectPath);
                     }
                 }
             }
@@ -126,21 +129,6 @@ public class BodyLeftPanel extends JPanel {
                 selectNode.add(treeNode);
             }
         }
-
-        String content = zookeeperServer.get(nodePath);
-        if(content==null || content.equals("")){
-            textPane.setText("");
-        }else{
-            try{
-                JsonParser jsonParser = new JsonParser();
-                JsonObject jsonObject = jsonParser.parse(content).getAsJsonObject();
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                String convertJson = gson.toJson(jsonObject);
-                textPane.setText(convertJson);
-            }catch (Exception e){
-                textPane.setText(content);
-            }
-        }
         return nodeChildCount;
     }
 
@@ -164,44 +152,12 @@ public class BodyLeftPanel extends JPanel {
             }
         });
 
-        JMenuItem updMenuItem=new JMenuItem("修改",new ImageIcon(getClass().getResource("/images/upd.png")));//创建菜单项(点击菜单项相当于点击一个按钮)
-        //菜单项绑定监听
-        updMenuItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(curSlectNode!=null && selectPath!=null && !"".equals(selectPath)){
-                    String content = textPane.getText();
-                    if(StringUtils.isNotBlank(content)){
-                        content = content.replaceAll("\n","").replaceAll("\\s*","");
-                    }
-                    zookeeperServer.update(selectPath,content);
-                }
-            }
-        });
-
         JMenuItem delMenuItem=new JMenuItem("删除",new ImageIcon(getClass().getResource("/images/del.png")));//创建菜单项(点击菜单项相当于点击一个按钮)
         //菜单项绑定监听
         delMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(curSlectNode!=null && selectPath!=null && !"".equals(selectPath)){
-                    if (JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
-                            null, "真的要删除该节点吗？", "删除节点",JOptionPane.YES_NO_OPTION)) {
-                        TreePath parentTreePath = curSlectTreePath.getParentPath();
-                        if(selectPath.equals("/")){
-                            String zkip = curSlectTreePath.getPath()[1].toString();
-                            PropertiesUtils.delZkip(zkip);
-                            dtm.removeNodeFromParent(curSlectNode);
-                        }else{
-                            zookeeperServer.delAllNode(selectPath);
-                            selectPath = getPaths(parentTreePath);
-                            curSlectTreePath = parentTreePath;
-                            curSlectNode = (DefaultMutableTreeNode)parentTreePath.getLastPathComponent();
-                            refreshNode(selectPath, curSlectNode, zookeeperServer);
-                            reloadTree();
-                        }
-                    }
-                }
+                delete();
             }
         });
 
@@ -220,10 +176,56 @@ public class BodyLeftPanel extends JPanel {
         });
 
         menu.add(addMenuItem);
-        menu.add(updMenuItem);
         menu.add(delMenuItem);
         menu.add(refreshMenuItem);
         return menu;
+    }
+
+    private void setContent(String nodePath){
+        String content = zookeeperServer.get(nodePath);
+        if(content==null || content.equals("")){
+            textPane.setText("");
+        }else{
+            try{
+                JsonParser jsonParser = new JsonParser();
+                JsonObject jsonObject = jsonParser.parse(content).getAsJsonObject();
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                String convertJson = gson.toJson(jsonObject);
+                textPane.setText(convertJson);
+            }catch (Exception e){
+                textPane.setText(content);
+            }
+        }
+    }
+
+    public void save(String content){
+        if(curSlectNode!=null && StringUtils.isNotBlank(selectPath)){
+            if(StringUtils.isNotBlank(content)){
+                content = content.replaceAll("\n","").replaceAll("\\s*","");
+            }
+            zookeeperServer.update(selectPath,content);
+        }
+    }
+
+    public void delete(){
+        if(curSlectNode!=null && selectPath!=null && !"".equals(selectPath)){
+            if (JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
+                    null, "真的要删除该节点吗？", "删除节点",JOptionPane.YES_NO_OPTION)) {
+                TreePath parentTreePath = curSlectTreePath.getParentPath();
+                if(selectPath.equals("/")){
+                    String zkip = curSlectTreePath.getPath()[1].toString();
+                    PropertiesUtils.delZkip(zkip);
+                    dtm.removeNodeFromParent(curSlectNode);
+                }else{
+                    zookeeperServer.delAllNode(selectPath);
+                    selectPath = getPaths(parentTreePath);
+                    curSlectTreePath = parentTreePath;
+                    curSlectNode = (DefaultMutableTreeNode)parentTreePath.getLastPathComponent();
+                    refreshNode(selectPath, curSlectNode, zookeeperServer);
+                    reloadTree();
+                }
+            }
+        }
     }
 
     private void reloadTree(){
@@ -234,13 +236,6 @@ public class BodyLeftPanel extends JPanel {
     public void addTree(String ip){
         DefaultMutableTreeNode zkNode = new DefaultMutableTreeNode(ip);
         rootNode.add(zkNode);
-//        ZooKeeperBase.setHost(ip);
-//        zookeeperServer = new ZookeeperServer();
-//        List<String> nodes = zookeeperServer.queryAll("/");
-//        for(String node : nodes){
-//            DefaultMutableTreeNode treeNode = new DefaultMutableTreeNode(node);
-//            zkNode.add(treeNode);
-//        }
         reloadTree();
     }
 

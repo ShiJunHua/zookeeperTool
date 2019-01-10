@@ -32,6 +32,7 @@ public class Main{
        HeaderPanel headerPanel = new HeaderPanel();
        BodyLeftPanel bodyLeftPanel = new BodyLeftPanel();
        BodyRightPanel bodyRightPanel = new BodyRightPanel();
+       bodyRightPanel.setBodyLeftPanel(bodyLeftPanel);
        bodyLeftPanel.setTextPane(bodyRightPanel.getTextArea());
        headerPanel.setTree(bodyLeftPanel.getTree());
        headerPanel.setTextPane(bodyRightPanel.getTextArea());

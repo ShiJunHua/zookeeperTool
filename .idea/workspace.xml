@@ -7,46 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="181ea272-9815-421e-8ca1-a6144706f7d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/percent/GlobalFont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/percent/PropertiesUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/font-plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/font-plus16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/font-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/menu-add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/menu-save.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zookeeper_jar/zookeeper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zookeeper_jar/zookeeper1.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyLeftPanel$5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyRightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/BodyRightPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/HeaderPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/HeaderPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/zookeeper/ZooKeeperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/zookeeper/ZooKeeperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/com/percent/zookeeper/ZookeeperServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zookeeper/com/percent/zookeeper/ZookeeperServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/del.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/upd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zookeeper/zookeeper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/percent/BodyRightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/BodyRightPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/percent/HeaderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/HeaderPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/percent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/percent/zookeeper/ZooKeeperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/zookeeper/ZooKeeperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/percent/zookeeper/ZookeeperServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/percent/zookeeper/ZookeeperServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/del.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/del.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/refresh.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/upd.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/upd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zookeeper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/zookeeper.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,25 +28,10 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/percent/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="51" column="87" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="87" />
+            <state relative-caret-position="58">
+              <caret line="26" column="72" lean-forward="true" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalFont.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/percent/GlobalFont.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="63" />
-              <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,20 +40,13 @@
       <file leaf-file-name="BodyLeftPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+            <state relative-caret-position="353">
+              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6556#6557#0" expanded="true" />
+                <element signature="e#6596#6597#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZookeeperServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/percent/zookeeper/ZookeeperServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2508">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -109,58 +54,15 @@
       <file leaf-file-name="BodyRightPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/percent/BodyRightPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="1518">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#680#1019#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1575#1576#0" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZooKeeperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/percent/zookeeper/ZooKeeperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/percent/HeaderPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertiesUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/percent/PropertiesUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java/jdk/jdk1.8.0_172/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47784">
-              <caret line="2259" column="23" selection-start-line="2259" selection-start-column="20" selection-end-line="2259" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -178,6 +80,9 @@
     <findStrings>
       <find>reloadTree</find>
       <find>sys</find>
+      <find>getMenu()</find>
+      <find>textPane</find>
+      <find>refreshNode</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -198,14 +103,14 @@
         <option value="$PROJECT_DIR$/src/com/percent/DemoScrollBarUI.java" />
         <option value="$PROJECT_DIR$/src/com/percent/ScrollBarUI.java" />
         <option value="$PROJECT_DIR$/src/com/percent/FontUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/percent/BodyRightPanel.java" />
         <option value="$PROJECT_DIR$/src/com/percent/GlobalFont.java" />
-        <option value="$PROJECT_DIR$/src/com/percent/Main.java" />
         <option value="$PROJECT_DIR$/src/zookeeper.properties" />
         <option value="$PROJECT_DIR$/src/com/percent/HeaderPanel.java" />
         <option value="$PROJECT_DIR$/src/com/percent/PropertiesUtils.java" />
         <option value="$PROJECT_DIR$/src/com/percent/zookeeper/ZookeeperServer.java" />
         <option value="$PROJECT_DIR$/src/com/percent/zookeeper/ZooKeeperBase.java" />
+        <option value="$PROJECT_DIR$/src/com/percent/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/percent/BodyRightPanel.java" />
         <option value="$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java" />
       </list>
     </option>
@@ -220,9 +125,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1029" />
-    <option name="y" value="1" />
-    <option name="width" value="1505" />
+    <option name="x" value="801" />
+    <option name="y" value="3" />
+    <option name="width" value="1737" />
     <option name="height" value="1046" />
   </component>
   <component name="ProjectView">
@@ -251,13 +156,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="percent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="zookeeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="percent" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -277,21 +175,21 @@
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace_backend_study\zookeeper\src" />
-      <recent name="F:\workspace_backend_study\zookeeper\src\images" />
-      <recent name="F:\workspace_backend_study\zookeeper\lib" />
-      <recent name="F:\workspace_backend_study\zookeeper\src\com\percent" />
-      <recent name="F:\workspace_backend_study\percent\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.percent" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\workspace_backend_study\zookeeper\src\images" />
       <recent name="F:\workspace_backend_study\percent\src" />
       <recent name="F:\workspace_backend_study\percent\images" />
       <recent name="F:\workspace_backend_study\percent\src\com\percent" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.percent" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace_backend_study\zookeeper\src\images" />
+      <recent name="F:\workspace_backend_study\zookeeper\src" />
+      <recent name="F:\workspace_backend_study\zookeeper\lib" />
+      <recent name="F:\workspace_backend_study\zookeeper\src\com\percent" />
+      <recent name="F:\workspace_backend_study\percent\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,15 +310,25 @@
       <workItem from="1544420106781" duration="3938000" />
       <workItem from="1544425165129" duration="705000" />
       <workItem from="1545647085483" duration="3059000" />
-      <workItem from="1546918092365" duration="2001000" />
+      <workItem from="1546918092365" duration="2680000" />
+      <workItem from="1547108376480" duration="2097000" />
     </task>
+    <task id="LOCAL-00001" summary="1、修复bug">
+      <created>1546924890240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546924890240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53491000" />
+    <option name="totallyTimeSpent" value="56267000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1029" y="1" width="1505" height="1046" extended-state="0" />
+    <frame x="801" y="3" width="1737" height="1046" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -431,10 +339,10 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.503663" side_tool="true" visible="true" weight="0.19930796" />
+      <window_info id="Structure" order="1" sideWeight="0.503663" side_tool="true" weight="0.17412046" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39867842" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39867842" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32893288" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -443,8 +351,9 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32819384" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496337" visible="true" weight="0.19930796" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496337" visible="true" weight="0.17412046" />
       <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32929516" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,7 +361,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32929516" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,9 +369,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、修复bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、修复bug" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -480,6 +400,8 @@
           <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6556#6557#0" expanded="true" />
+            <element signature="e#6596#6597#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,6 +422,8 @@
           <caret line="200" column="106" lean-forward="true" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6556#6557#0" expanded="true" />
+            <element signature="e#6596#6597#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,6 +441,10 @@
           <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#680#1019#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,16 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/percent/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zookeeper.properties" />
     <entry file="jar://D:/java/jdk/jdk1.8.0_172/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -817,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/percent/zookeeper/ZooKeeperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="2134">
           <caret line="110" selection-start-line="110" selection-end-line="110" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -827,8 +745,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/percent/BodyRightPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="1518">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#680#1019#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/percent/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="26" column="72" lean-forward="true" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -837,10 +769,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/percent/BodyLeftPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="353">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6556#6557#0" expanded="true" />
+            <element signature="e#6596#6597#0" expanded="true" />
           </folding>
         </state>
       </provider>
