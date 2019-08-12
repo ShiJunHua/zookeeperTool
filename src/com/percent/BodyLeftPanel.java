@@ -15,6 +15,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 /**
@@ -145,7 +147,13 @@ public class BodyLeftPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 if(curSlectNode!=null && selectPath!=null && !"".equals(selectPath)){
                     String node = JOptionPane.showInputDialog("请输入节点名称");
-                    zookeeperServer.create(selectPath+"/"+node,"");
+                    String nodePath = "";
+                    if(selectPath.length()==1 && "/".equalsIgnoreCase(selectPath)){
+                        nodePath = "/"+node;
+                    }else{
+                        nodePath = selectPath+"/"+node;
+                    }
+                    zookeeperServer.create(nodePath,"");
                     refreshNode(selectPath, curSlectNode, zookeeperServer);
                     reloadTree();
                 }
@@ -198,12 +206,18 @@ public class BodyLeftPanel extends JPanel {
         }
     }
 
-    public void save(String content){
-        if(curSlectNode!=null && StringUtils.isNotBlank(selectPath)){
-            if(StringUtils.isNotBlank(content)){
-                content = content.replaceAll("\n","").replaceAll("\\s*","");
+    public void save(String str) {
+        try {
+            String content = new String(str.getBytes(), StandardCharsets.UTF_8);
+            System.out.println(content);
+            if(curSlectNode!=null && StringUtils.isNotBlank(selectPath)){
+                if(StringUtils.isNotBlank(content)){
+                    content = content.replaceAll("\n","").replaceAll("\\s*","");
+                }
+                zookeeperServer.update(selectPath,content);
             }
-            zookeeperServer.update(selectPath,content);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -219,8 +233,15 @@ public class BodyLeftPanel extends JPanel {
                 }else{
                     zookeeperServer.delAllNode(selectPath);
                     selectPath = getPaths(parentTreePath);
-                    curSlectTreePath = parentTreePath;
-                    curSlectNode = (DefaultMutableTreeNode)parentTreePath.getLastPathComponent();
+                    boolean hasChild = zookeeperServer.hasChild(selectPath);
+                    if(hasChild){
+                        curSlectTreePath = parentTreePath;
+                        curSlectNode = (DefaultMutableTreeNode)parentTreePath.getLastPathComponent();
+                    }else{
+                        selectPath = getPaths(parentTreePath.getParentPath());
+                        curSlectTreePath = parentTreePath.getParentPath();
+                        curSlectNode = (DefaultMutableTreeNode)curSlectTreePath.getLastPathComponent();
+                    }
                     refreshNode(selectPath, curSlectNode, zookeeperServer);
                     reloadTree();
                 }

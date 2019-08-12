@@ -117,4 +117,17 @@ public class ZookeeperServer{
         }
     }
 
+    public boolean hasChild(String path){
+        ZooKeeperBase zooKeeperBase = ZooKeeperBase.getInstance();
+        try{
+            zooKeeperBase.connect();
+            return zooKeeperBase.hasChild(path);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            zooKeeperBase.close();
+        }
+        return false;
+    }
+
 }

@@ -5,6 +5,7 @@ import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.data.Stat;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -128,7 +129,7 @@ public class ZooKeeperBase implements Watcher{
         if (this.nodeExists(path)){
             byte[] resultByte = this.zooKeeper.getData(path, null, null);
             if(resultByte==null) return "";
-            return new String(resultByte,"utf-8");
+            return new String(resultByte, StandardCharsets.UTF_8);
         }
         return null;
     }
@@ -148,6 +149,15 @@ public class ZooKeeperBase implements Watcher{
             return this.zooKeeper.getChildren(path, false);
         }
         return null;
+    }
+
+    // 获取某节点的子节点,先判定该节点是否存在
+    public boolean hasChild(String path) throws Exception {
+        if (this.nodeExists(path)){
+            List<String> list = getChildren(path);
+            return list!=null && !list.isEmpty();
+        }
+        return false;
     }
 
     @Override
